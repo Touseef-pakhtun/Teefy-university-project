@@ -3,13 +3,15 @@
 <head>
     <meta name="viewport" content="width-device-width, initial-scale=0.1">
     <title>university project.</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
-            <div>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -18,8 +20,37 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showmenu()" id="navlinks"></i>
         </nav>
-        
+        <div class="text-box">
+            <h1>Wellcome to Teefy university</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum consequatur magnam, quidem repellendus minus qui, consequuntur <br> voluptatibus dolor similique, quo nihil laboriosam tenetur molestiae consectetur architecto quasi sint id a?</p>
+            <a href="" class="hero-btn">visit Us to know more</a>
+        </div>
     </section>
+
+
+    <!-- course section -->
+     <section class="course">
+        <h1>we provide the following courses</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus explicabo distinctio vitae, natus officiis quibusdam beatae enim perspiciatis hic praesentium consectetur ipsa soluta corporis alias excepturi tenetur cupiditate suscipit harum!</p>
+
+     </section>
+
+    <!-- This is our javascript code -->
+
+    <script>
+
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu(){  
+            navlinks.style.right="0";
+        }
+
+        function hidemenu(){ 
+            navlinks.style.right="-200px";
+             
+        }
+    </script>
 </body>
 </html>
