@@ -9,7 +9,7 @@
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+            <a href="index.html"><img src="eduford_img/logo.png" alt="" class="logoimage"></a>
             <div class="nav-links" id="navlinks">
                 <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
@@ -24,16 +24,30 @@
         </nav>
         <div class="text-box">
             <h1>Wellcome to Teefy university</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum consequatur magnam, quidem repellendus minus qui, consequuntur <br> voluptatibus dolor similique, quo nihil laboriosam tenetur molestiae consectetur architecto quasi sint id a?</p>
-            <a href="" class="hero-btn">visit Us to know more</a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum consequatur magnam, quidem repellendus minus qui, consequuntur voluptatibus dolor similique, quo nihil laboriosam tenetur molestiae consectetur architecto quasi sint id a?</p>
+            <a href="" class="hero-btn">Visit us to know more</a>
         </div>
     </section>
 
 
     <!-- course section -->
      <section class="course">
-        <h1>we provide the following courses</h1>
+        <h1>Courses We Provide</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus explicabo distinctio vitae, natus officiis quibusdam beatae enim perspiciatis hic praesentium consectetur ipsa soluta corporis alias excepturi tenetur cupiditate suscipit harum!</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quae tempore doloribus fugit ratione dicta optio impedit dolores beatae blanditiis sunt ex neque modi maxime laboriosam animi minus, quos deserunt.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quae tempore doloribus fugit ratione dicta optio impedit dolores beatae blanditiis sunt ex neque modi maxime laboriosam animi minus, quos deserunt.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quae tempore doloribus fugit ratione dicta optio impedit dolores beatae blanditiis sunt ex neque modi maxime laboriosam animi minus, quos deserunt.</p>
+            </div>
+        </div>
 
      </section>
 
@@ -41,14 +55,22 @@
 
     <script>
 
-        var navlinks = document.getElementById("navlinks");
+        var mavlinks = document.getElementById("navlinks");
 
-        function showmenu(){  
-            navlinks.style.right="0";
+        function showmenu(){ 
+            mavlinks.style.right="0";
+            // mavlinks.style.display="block"; 
+            
+            // navlinks.style.transition="5s";
+
+            
         }
 
         function hidemenu(){ 
-            navlinks.style.right="-200px";
+            
+            mavlinks.style.right="-500px";
+            // mavlinks.style.display="none";
+            // navlinks.style.transition="5s";
              
         }
     </script>
