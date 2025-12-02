@@ -102,11 +102,11 @@ nav .fa{
         width: 80px;
     }
     .text-box h1{
-        font-size: 25px;
+        font-size: 100px;
         margin-top: 20px;
     }
     .text-box p{
-        font-size: 10px;
+        font-size: 20px;
         font-weight: 100;
         color: rgb(227, 225, 225);
     }
@@ -190,6 +190,7 @@ h3{
         overflow: hidden;
     }
     .row{
+        display:flex;
         flex-direction: column;
     }
 }
